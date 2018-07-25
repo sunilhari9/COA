@@ -5,6 +5,7 @@
 /.idea
 .project
 .classpath
+.tmp/
 .c9/
 *.launch
 .settings/
