@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Custom output application</title>
     <meta name="description" content="">
@@ -14,22 +15,38 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-  </head>
-  <body ng-app="coaApp">
+</head>
+
+<body ng-app="coaApp">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-        <a class="navbar-brand" href="#/"><img src="images/logo.png"></a>
+    <div class="container-fluid mainPage bg-primary">
+        <div class="row ">
+            <div class="col-md-4">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" class="logoclass"></a>
+            </div>
+            <div class="col-md-4 headerData">
+                Document Number : {{documentNumber}}
+            </div>
+            <div class="col-md-4 headerData pull-right">
+                {{customername}} {{shipTo}}#
+            </div>
+        </div>
+
     </div>
 
-    <div class="container">
-    <div ng-view=""></div>
+    <div class="container-fluid selectionPanel">
+        <div ng-view=""></div>
     </div>
+    <footer class="footer nopadding navbar-fixed-bottom navbar-default">
+        
+        <div class="text-center">© Graybar Services, Inc. All Right Reserved. </div>
+        
+    </footer>
 
-    
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -45,10 +62,11 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <!-- endbuild -->
 </body>
+
 </html>

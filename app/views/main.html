@@ -1,14 +1,39 @@
-<div class="row">
-    <h4>HTML5 Boilerplate</h4>
-    <p>
-        HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-    </p>
+<div class="container" ng-controller="MainCtrl">
+    <div class="panel panel-primary">
+           <div class="panel-heading">Selection Criteria</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6 checkboxContent" ng-repeat="(key, val) in checkBoxOptions">
 
-    <h4><a ng-href="#!about">Angular</a></h4>
-    <p>
-        AngularJS is a toolset for building the framework most suited to your application development.
-    </p>
+                    <label class="checkboxContainer">{{val}}
+                    <input type="checkbox" value="{{key}}">
+                    <span class="checkmark"></span>
+                    </label>
 
-    <h4>Karma</h4>
-    <p>Spectacular Test Runner for JavaScript.</p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-2">
+                    <input type="reset" class="btn btn-primary" value="Reset">
+                </div>
+                <div class="col-md-2">
+                    <input type="reset" class="btn btn-primary" value="PDF">
+                </div>
+                <div class="col-md-2">
+                    <input type="reset" class="btn btn-primary" value="Excel">
+                </div>
+                <div class="col-md-2">
+                    <input type="reset" class="btn btn-primary" value="Related">
+                </div>
+                <div class="col-md-2">
+                    <input type="reset" class="btn btn-primary" value="History">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </div>
