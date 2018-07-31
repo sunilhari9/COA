@@ -1,8 +1,9 @@
-<div class="container" ng-controller="MainCtrl">
+<form>
+<div class="container" ng-controller="MainCtrl" >
     <div class="panel panel-primary">
-           <div class="panel-heading">Selection Criteria</div>
+        <div class="panel-heading">Line items Selection Criteria</div>
         <div class="panel-body">
-            <div class="row">
+            <div class="row" id="checkList">
                 <div class="col-md-6 checkboxContent" ng-repeat="(key, val) in checkBoxOptions">
 
                     <label class="checkboxContainer">{{val}}
@@ -20,7 +21,7 @@
                     <input type="reset" class="btn btn-primary" value="Reset">
                 </div>
                 <div class="col-md-2">
-                    <input type="reset" class="btn btn-primary" value="PDF">
+                    <input type="button" class="btn btn-primary" value="PDF" ng-click="generatePDF()">
                 </div>
                 <div class="col-md-2">
                     <input type="reset" class="btn btn-primary" value="Excel">
@@ -36,4 +37,4 @@
         </div>
     </div>
 
-</div>
+</div></form>
