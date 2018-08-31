@@ -1,5 +1,7 @@
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 <form>
-<div class="container" ng-controller="MainCtrl" >
+<div class="container" ng-controller="MainCtrl" id="exportthis">
     <div class="panel panel-primary">
         <div class="panel-heading">Line items Selection Criteria</div>
         <div class="panel-body">
@@ -21,10 +23,10 @@
                     <input type="reset" class="btn btn-primary" value="Reset">
                 </div>
                 <div class="col-md-2">
-                    <input type="button" class="btn btn-primary" value="PDF" ng-click="generatePDF()">
+                    <input type="button" class="btn btn-primary" value="PDF" ng-click="preview();">
                 </div>
                 <div class="col-md-2">
-                    <input type="reset" class="btn btn-primary" value="Excel">
+                    <input type="reset" class="btn btn-primary" value="email" ng-click="export();">
                 </div>
                 <div class="col-md-2">
                     <input type="reset" class="btn btn-primary" value="Related">

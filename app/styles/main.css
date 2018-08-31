@@ -190,3 +190,7 @@ body {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+.itextarea{
+        height: 47rem;
+    width: 80rem;
+}

@@ -1,0 +1,271 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<style type="text/css">
+    #logo {
+        text-align: center
+    }
+
+    .lables {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 18px !important;
+        font-weight: bold;
+    }
+
+    .middleHeader {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 18px !important;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .middleHeader span {
+        font-size: 28px !important;
+    }
+
+    pre {
+        display: block;
+        padding: 1px !important;
+        /* margin: 0 0 10px; */
+        font-size: 13px;
+        /* line-height: 1.42857143; */
+        color: black;
+        /* word-break: break-all; */
+        /* word-wrap: break-word; */
+        background-color: white;
+        border: 0px !important;
+        border-radius: 1px;
+    }
+
+</style>
+<form>
+<div id="emailPDF" class="">
+    <div id="logo" style=""><img src="../images/logo.png">
+        <p>8606 MIRALANI DRIVE<br> SAN DIEGO CA 92126-4353<br> Phone: 314-573-5253<br> Fax: 314-573-0062</p>
+    </div>
+    <div>
+        <div class="col-md-6">
+            <table>
+                <tr>
+                    <td class="lables">Sold To</td>
+                    <td>: {{userdetail.soldto}}</td>
+                </tr>
+                <tr>
+                    <td class="lables">Ship To</td>
+                    <td>:{{userdetail.shipto}}</td>
+                </tr>
+                <tr>
+                    <td class="lables">Attn</td>
+                    <td>:{{userdetail.attn}}</td>
+                </tr>
+                <tr>
+                    <td class="lables">Phone</td>
+                    <td>: {{userdetail.phone}}</td>
+                </tr>
+                <tr>
+                    <td class="lables">Email</td>
+                    <td>:{{userdetail.email}}</td>
+                </tr>
+                <tr>
+                    <td class="lables">Fax</td>
+                    <td>:{{userdetail.fax}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <table>
+                <tr>
+                    <td class="lables">Date:</td>
+                    <td>:{{userdetail.date}}</td>
+                </tr>
+                <tr>
+                    <td class="lables">Project Name:</td>
+                    <td>:{{userdetail.fax}}</td>
+                </tr>
+                <tr>
+                    <td class="lables">Graybar Order:</td>
+                    <td>:{{userdetail.fax}}</td>
+                </tr>
+                <tr>
+                    <td class="lables">Purchase Order Nbr:</td>
+                    <td>:{{userdetail.fax}}</td>
+                </tr>
+                <tr>
+                    <td class="lables">Release Nbr:</td>
+                    <td>:{{userdetail.fax}}</td>
+                </tr>
+                <tr>
+                    <td class="lables">Additional Ref#:</td>
+                    <td>:{{userdetail.fax}}</td>
+                </tr>
+                <tr>
+                    <td class="lables">Ref Quote Nbr:</td>
+                    <td>:{{userdetail.fax}}</td>
+                </tr>
+                <tr>
+                    <td class="lables">Graybar Contact:</td>
+                    <td>:{{userdetail.phone}}</td>
+                </tr>
+                <tr>
+                    <td class="lables">Email:</td>
+                    <td>:{{userdetail.email}}</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <br><br>
+        <div class="middleHeader">
+            <span>Order Acknowledgement</span>
+            <p>Thank you for Selecting Graybar, We Appreciate Your Business</p>
+        </div>
+
+        <br>
+        <div>
+            <!--   "Item": "Item / Type",
+            "UnitPricing": "Unit Pricing",
+            "MFRName": "MFR NAME",
+            "MFRPart": "MFR PART #",
+            "ShippingPoint": "Shipping Point",
+            "CustomerItem": "Customer Item Sort",
+            "Tax": "Tax or no TAX",
+            "ThumbnailImages": "Thumbnail images",
+    **/ -->
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>{{checkBoxOptions.Item}}</th>
+                        <th>{{checkBoxOptions.UnitPricing}}</th>
+                        <th>{{checkBoxOptions.MFRName}}</th>
+                        <th>{{checkBoxOptions.MFRPart}}</th>
+                        <th>{{checkBoxOptions.ShippingPoint}}</th>
+                        <th>{{checkBoxOptions.Tax}}</th>
+                        <th>{{checkBoxOptions.ThumbnailImages}}</th>
+                    </tr>
+                </thead>
+                <tr>
+
+                    <td>:{{userdetail.date}}</td>
+
+
+                    <td>:{{userdetail.fax}}</td>
+
+
+                    <td>:{{userdetail.fax}}</td>
+
+
+                    <td>:{{userdetail.fax}}</td>
+
+                    <td>:{{userdetail.fax}}</td>
+
+
+                    <td>:{{userdetail.fax}}</td>
+                </tr>
+
+            </table>
+        </div>
+        <div id="footercontent">
+            <pre>
+            
+     
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+            
+    GRAYBAR ELECTRIC COMPANY, INC.
+TERMS AND CONDITIONS OF SALE
+1. ACCEPTANCE OF ORDER; TERMINATION - Acceptance of any order is subject to credit approval and acceptance of order by Graybar Electric Company, Inc. ("Graybar") and, when applicable,
+Graybar's suppliers. If credit of the buyer of the goods ("Buyer") becomes unsatisfactory to Graybar, Graybar reserves the right to terminate upon notice to Buyer and without liability to Graybar.
+2. PRICES AND SHIPMENTS - Unless otherwise quoted, prices shall be those in effect at time of shipment, which shall be made F.O.B. shipping point, prepaid and bill.
+3. RETURN OF GOODS - Credit may be allowed for goods returned with prior approval. A deduction may be made from credits issued to cover cost of handling.
+4. TAXES - Prices shown do not include sales or other taxes imposed on the sale of goods. Taxes now or hereafter imposed upon sales or shipments will be added to the purchase price. Buyer agrees
+to reimburse Graybar for any such tax or provide Graybar with acceptable tax exemption certificate.
+5. DELAY IN DELIVERY - Graybar is not to be accountable for delays in delivery occasioned by acts of God, failure of its suppliers to ship or deliver on time, or other circumstances beyond
+Graybar's reasonable control. Factory shipment or delivery dates are the best estimates of our suppliers, and in no case shall Graybar be liable for any consequential or special damages arising from
+any delay in shipment or delivery.
+6. LIMITED WARRANTIES - Graybar warrants that all goods sold are free of any security interest and will make available to Buyer all transferable warranties (including without limitation warranties
+with respect to intellectual property infringement) made to Graybar by the manufacturer of the goods. GRAYBAR MAKES NO OTHER EXPRESS OR IMPLIED WARRANTIES, AND
+SPECIFICALLY DISCLAIMS ALL IMPLIED WARRANTIES INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR PURPOSE.
+UNLESS OTHERWISE AGREED IN WRITING BY AN AUTHORIZED REPRESENTATIVE OF GRAYBAR, PRODUCTS SOLD HEREUNDER ARE NOT INTENDED FOR USE IN OR IN
+CONNECTION WITH (1) ANY SAFETY APPLICATION OR THE CONTAINMENT AREA OF A NUCLEAR FACILITY, OR (2) IN A HEALTHCARE APPLICATION, WHERE THE GOODS
+HAVE POTENTIAL FOR DIRECT PATIENT CONTACT OR WHERE A SIX (6) FOOT CLEARANCE FROM A PATIENT CANNOT BE MAINTAINED AT ALL TIMES.
+7. LIMITATION OF LIABILITY - Buyer's remedies under this agreement are subject to any limitations contained in manufacturer's terms and conditions to Graybar, a copy of which will be furnished
+upon written request. Furthermore, Graybar's liability shall be limited to either repair or replacement of the goods or refund of the purchase price, all at Graybar's option, and IN NO CASE SHALL
+GRAYBAR BE LIABLE FOR INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES. In addition, claims for shortages, other than loss in transit, must be made in writing not more than five
+(5) days after receipt of shipment.
+8. WAIVER - The failure of Graybar to insist upon the performance of any of the terms or conditions of this agreement or to exercise any right hereunder shall not be deemed to be a waiver of such
+terms, conditions, or rights in the future, nor shall it be deemed to be a waiver of any other term, condition, or right under this agreement.
+9. MODIFICATION OF TERMS AND CONDITIONS - These terms and conditions supersede all other communications, negotiations, and prior oral or written statements regarding the subject matter of
+these terms and conditions. No change, modification, rescission, discharge, abandonment, or waiver of these terms and conditions shall be binding upon Graybar unless made in writing and signed on
+its behalf by a duly authorized representative of Graybar. No conditions, usage of trade, course of dealing or performance, understanding or agreement, purporting to modify, vary, explain, or
+supplement these terms and conditions shall be binding unless hereafter made in writing and signed by the party to be bound. Any proposed modifications or additional terms are specifically rejected
+and deemed a material alteration hereof. If this document shall be deemed an acceptance of a prior offer by Buyer, such acceptance is expressly conditional upon Buyer's assent to any additional or
+different terms set forth herein.
+10. REELS - When Graybar ships returnable reels, a reel deposit may be included in the invoice. The Buyer should contact the nearest Graybar service location to return reels.
+11. CERTIFICATION - Graybar hereby certifies that these goods were produced in compliance with all applicable requirements of Sections 6, 7, and 12 of the Fair Labor Standards Act, as amended,
+and of regulations and orders of the United States Department of Labor issued under Section 14 thereof. This agreement is subject to Executive Order 11246, as amended, the Rehabilitation Act of
+1973, as amended, the Vietnam Veterans' Readjustment Assistance Act of 1974, as amended, E.O. 13496, 29 CFR Part 471, Appendix A to Subpart A, and the corresponding regulations, to the extent
+required by law. 41 CFR 60-1.4, 60-741.5, and 60-250.5 are incorporated herein by reference, to the extent legally required.
+12. FOREIGN CORRUPT PRACTICES ACT - Buyer shall comply with applicable laws and regulations relating to anti-corruption, including, without limitation, (i) the United States Foreign Corrupt
+Practices Act (FCPA) (15 U.S.C. §§78dd-1, et. seq.) irrespective of the place of performance, and (ii) laws and regulations implementing the Organization for Economic Cooperation and Development's
+Convention on Combating Bribery of Foreign Public Officials in International Business Transactions, the U.N. Convention Against Corruption, and the Inter-American Convention Against Corruption in
+Buyer's country or any country where performance of this agreement or delivery of goods will occur.
+13. ASSIGNMENT - Buyer shall not assign its rights or delegate its duties hereunder or any interest herein without the prior written consent of Graybar, and any such assignment, without such
+consent, shall be void.
+14. GENERAL PROVISIONS - All typographical or clerical errors made by Graybar in any quotation, acknowledgment or publication are subject to correction. This agreement shall be governed by the
+laws of the State of Missouri applicable to contracts to be formed and fully performed within the State of Missouri, without giving effect to the choice or conflicts of law provisions thereof. All suits
+arising from or concerning this agreement shall be filed in the Circuit Court of St. Louis County, Missouri, or the United States District Court for the Eastern District of Missouri, and no other place
+unless otherwise determined in Graybar's sole discretion. Buyer hereby irrevocably consents to the jurisdiction of such court or courts and agrees to appear in any such action upon written notice
+thereof.
+15. PAYMENT TERMS - Payment terms shall be as stated on Graybar's invoice or as otherwise mutually agreed. As a condition of the sales agreement, a monthly service charge of the lesser of
+1-1/2% or the maximum permitted by law may be added to all accounts not paid by net due date. Visa, MasterCard, American Express, and Discover credit cards are accepted at point of purchase
+only.
+16. EXPORTING - Buyer acknowledges that this order and the performance thereof are subject to compliance with any and all applicable United States laws, regulations, or orders. Buyer agrees to
+comply with all such laws, regulations, and orders, including, if applicable, all requirements of the International Traffic in Arms Regulations and/or the Export Administration Act, as may be amended.
+Buyer further agrees that if the export laws are applicable, it will not disclose or re-export any technical data received under this order to any countries for which the United States government requires
+an export license or other supporting documentation at the time of export or transfer, unless Buyer has obtained prior written authorization from the United States Office of Export Control or other
+authority responsible for such matters.
+    </pre>
+        </div>
+    </div>
+
+      <input type="button" class="btn btn-primary" value="Sen Mail" ng-click="export();">
+</div>
+</form>

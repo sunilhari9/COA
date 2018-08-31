@@ -32,6 +32,11 @@ var app=angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/previewpdf', {
+        templateUrl: 'views/pdfone.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+      })
       .otherwise({
         redirectTo: '/'
       });
